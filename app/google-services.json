@@ -1,0 +1,47 @@
+{
+  "project_info": {
+    "project_number": "206281443255",
+    "project_id": "price-app-driver-3d22d",
+    "storage_bucket": "price-app-driver-3d22d.appspot.com"
+  },
+  "client": [
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:206281443255:android:346f342cfa0626f3678a32",
+        "android_client_info": {
+          "package_name": "com.technorizen.priceappdriver"
+        }
+      },
+      "oauth_client": [
+        {
+          "client_id": "206281443255-i9t2jmp5ve4f5vv6r942vck8f34gq0m0.apps.googleusercontent.com",
+          "client_type": 1,
+          "android_info": {
+            "package_name": "com.technorizen.priceappdriver",
+            "certificate_hash": "be053cf6e79e8a61ba7f5be6681e8978782d7b5e"
+          }
+        },
+        {
+          "client_id": "206281443255-4j3bg21abub094bk87k79gnk599uk4ek.apps.googleusercontent.com",
+          "client_type": 3
+        }
+      ],
+      "api_key": [
+        {
+          "current_key": "AIzaSyA_86nAZSY7Cz-Yygl9rXAjFxs2jYxswBs"
+        }
+      ],
+      "services": {
+        "appinvite_service": {
+          "other_platform_oauth_client": [
+            {
+              "client_id": "206281443255-4j3bg21abub094bk87k79gnk599uk4ek.apps.googleusercontent.com",
+              "client_type": 3
+            }
+          ]
+        }
+      }
+    }
+  ],
+  "configuration_version": "1"
+}

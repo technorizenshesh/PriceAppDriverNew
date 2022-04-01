@@ -1,0 +1,118 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.coordinatorlayout.widget.CoordinatorLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/gray"
+    tools:context=".TripDetail">
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        >
+
+        <fragment
+            android:id="@+id/map"
+            android:name="com.google.android.gms.maps.SupportMapFragment"
+            android:layout_width="match_parent"
+            android:layout_gravity="center"
+            android:layout_height="match_parent"
+            />
+
+        <RelativeLayout
+            android:id="@+id/rlPick"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:background="@drawable/home_top_rec"
+            android:layout_marginTop="@dimen/_70sdp"
+            android:layout_marginHorizontal="@dimen/_15sdp"
+            android:padding="@dimen/_10sdp"
+            >
+
+            <TextView
+                android:id="@+id/tvPickup"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Pickup - "
+                android:textSize="@dimen/_12sdp"
+                android:fontFamily="@font/montserrat_semibold"
+                android:textColor="@color/green"
+                />
+
+            <TextView
+                android:id="@+id/tvPickLoc"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:fontFamily="@font/montserrat_medium"
+                android:text="@string/update"
+                android:layout_toRightOf="@id/tvPickup"
+                android:textSize="@dimen/_12sdp"
+                android:textColor="@color/black"
+                />
+
+        </RelativeLayout>
+
+
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:background="@drawable/home_top_rec"
+            android:layout_marginTop="@dimen/_15sdp"
+            android:layout_marginHorizontal="@dimen/_15sdp"
+            android:padding="@dimen/_10sdp"
+            android:layout_below="@id/rlPick"
+            >
+
+            <TextView
+                android:id="@+id/tvdropOff"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Dropup - "
+                android:textSize="@dimen/_12sdp"
+                android:fontFamily="@font/montserrat_semibold"
+                android:textColor="@color/green"
+                />
+
+            <TextView
+                android:id="@+id/tvDropLoc"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:fontFamily="@font/montserrat_medium"
+                android:text="@string/update"
+                android:layout_toRightOf="@id/tvdropOff"
+                android:textSize="@dimen/_12sdp"
+                android:textColor="@color/black"
+                />
+
+        </RelativeLayout>
+
+        <androidx.cardview.widget.CardView
+            android:id="@+id/cvBack"
+            android:layout_width="@dimen/_25sdp"
+            android:layout_height="@dimen/_25sdp"
+            app:cardCornerRadius="@dimen/_30sdp"
+            app:cardBackgroundColor="@color/white"
+            android:layout_margin="@dimen/_15sdp"
+            >
+            <RelativeLayout
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                >
+                <ImageView
+                android:layout_width="@dimen/_20sdp"
+                android:layout_height="@dimen/_20sdp"
+                android:src="@drawable/ic_back"
+                android:layout_centerInParent="true"
+                android:padding="@dimen/_2sdp"
+                />
+            </RelativeLayout>
+
+        </androidx.cardview.widget.CardView>
+
+    </RelativeLayout>
+
+    <include layout="@layout/bottom_sheet_dialof" android:id="@+id/bottom"/>
+
+</androidx.coordinatorlayout.widget.CoordinatorLayout>

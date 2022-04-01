@@ -1,0 +1,160 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:orientation="vertical">
+
+<!--    <androidx.cardview.widget.CardView-->
+<!--        android:layout_width="match_parent"-->
+<!--        android:layout_height="wrap_content"-->
+<!--        android:elevation="@dimen/_10sdp"-->
+<!--        app:cardElevation="@dimen/_10sdp"-->
+<!--        app:cardMaxElevation="@dimen/_10sdp"-->
+<!--        app:cardUseCompatPadding="true"-->
+<!--        app:cardCornerRadius="@dimen/_5sdp"-->
+<!--        >-->
+
+
+    <RelativeLayout
+        android:id="@+id/rlParent"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:padding="@dimen/_8sdp"
+        android:background="@drawable/shadow"
+        android:layout_margin="@dimen/_10sdp"
+        >
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical"
+            >
+<RelativeLayout
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    >
+
+    <TextView
+        android:id="@+id/tvTime"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:fontFamily="@font/montserrat_semibold"
+        android:text="Feb 12,Fri 10:00 PM"
+        android:textSize="@dimen/_11sdp" />
+
+    <TextView
+        android:id="@+id/tvPrice"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:fontFamily="@font/montserrat_semibold"
+        android:textSize="@dimen/_14sdp"
+        android:layout_alignParentRight="true"
+        android:textColor="@color/tab_text_color"
+        android:text="$134.00"
+        android:layout_marginRight="@dimen/_40sdp"
+        android:layout_marginBottom="@dimen/_8sdp"
+        />
+
+</RelativeLayout>
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        >
+
+        <ImageView
+            android:id="@+id/circle"
+            android:layout_width="@dimen/_15sdp"
+            android:layout_height="@dimen/_15sdp"
+            android:src="@drawable/circle_stroke_grey"/>
+
+        <View
+            android:id="@+id/view1"
+            android:layout_width="@dimen/_2sdp"
+            android:layout_height="@dimen/_20sdp"
+            android:layout_below="@id/circle"
+            android:layout_above="@+id/loc"
+            android:layout_marginLeft="@dimen/_8sdp"
+            android:background="@color/gray"/>
+
+            <ImageView
+                android:id="@+id/loc"
+                android:layout_width="@dimen/_20sdp"
+                android:layout_height="@dimen/_20sdp"
+                android:background="@drawable/ic_location_24"
+                android:scaleType="fitXY"
+                android:layout_alignBottom="@id/tvtoLocation"
+                />
+
+
+        <TextView
+            android:id="@+id/tvFromLocation"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:fontFamily="@font/montserrat_regular"
+            android:textSize="@dimen/_12sdp"
+            android:text="SHau taka \ntaka"
+            android:layout_toRightOf="@id/circle"
+            android:ems="10"
+            android:layout_marginLeft="@dimen/_10sdp"
+            />
+        <TextView
+            android:id="@+id/tvtoLocation"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:fontFamily="@font/montserrat_regular"
+            android:textSize="@dimen/_12sdp"
+            android:layout_below="@id/tvFromLocation"
+            android:layout_marginTop="@dimen/_20sdp"
+            android:text="SHau taka taka"
+            android:ems="10"
+            android:layout_marginLeft="@dimen/_30sdp"
+            />
+
+    </RelativeLayout>
+        </LinearLayout>
+
+        <TextView
+            android:id="@+id/tvCompleted"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="@string/completed"
+            android:background="@drawable/circle_stroke_grey"
+            android:paddingHorizontal="@dimen/_20sdp"
+            android:paddingVertical="@dimen/_5sdp"
+            android:layout_centerVertical="true"
+            android:layout_alignParentRight="true"
+            android:textColor="@color/white"
+            />
+
+        <TextView
+            android:id="@+id/tvInProgress"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="@string/in_progress"
+            android:background="@drawable/circle_blue"
+            android:paddingHorizontal="@dimen/_20sdp"
+            android:paddingVertical="@dimen/_5sdp"
+            android:layout_alignParentRight="true"
+            android:textColor="@color/white"
+            android:layout_centerVertical="true"
+            />
+
+        <TextView
+            android:id="@+id/tvNew"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="@string/new_request"
+            android:background="@drawable/circle_yellow"
+            android:paddingHorizontal="@dimen/_20sdp"
+            android:paddingVertical="@dimen/_5sdp"
+            android:layout_alignParentRight="true"
+            android:textColor="@color/white"
+            android:layout_marginBottom="@dimen/_10sdp"
+            android:layout_centerVertical="true"
+            />
+
+    </RelativeLayout>
+
+</LinearLayout>

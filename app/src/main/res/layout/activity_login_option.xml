@@ -1,0 +1,55 @@
+<?xml version="1.0" encoding="utf-8"?>
+<layout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools">
+
+<RelativeLayout
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    tools:context=".LoginOptionAct">
+
+    <ImageView
+        android:layout_width="@dimen/_150sdp"
+        android:layout_height="@dimen/_150sdp"
+        android:src="@drawable/ic_app_logo"
+        android:layout_centerInParent="true"
+        />
+
+    <androidx.appcompat.widget.AppCompatButton
+        android:id="@+id/btnLogin"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:background="@drawable/bt_bg"
+        android:textAllCaps="false"
+        android:text="@string/login"
+        android:textSize="@dimen/_12sdp"
+        android:fontFamily="@font/montserrat_semibold"
+        android:textColor="@color/white"
+        android:layout_marginTop="@dimen/_25sdp"
+        android:layout_marginHorizontal="@dimen/_15sdp"
+        android:layout_above="@+id/btnCreateAcc"
+        android:layout_marginBottom="@dimen/_20sdp"
+        android:clickable="true"
+        android:focusable="true"
+        />
+
+
+    <androidx.appcompat.widget.AppCompatButton
+        android:id="@+id/btnCreateAcc"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:background="@drawable/black_bt_bg"
+        android:textAllCaps="false"
+        android:text="@string/create_account"
+        android:textSize="@dimen/_12sdp"
+        android:fontFamily="@font/montserrat_semibold"
+        android:textColor="@color/white"
+        android:layout_alignParentBottom="true"
+        android:layout_marginHorizontal="@dimen/_15sdp"
+        android:layout_marginBottom="@dimen/_50sdp"
+        android:clickable="true"
+        android:focusable="true" />
+
+</RelativeLayout>
+</layout>

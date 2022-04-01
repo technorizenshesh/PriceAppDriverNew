@@ -1,0 +1,39 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:orientation="vertical"
+    >
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:padding="@dimen/_15sdp"
+        >
+        <CheckBox
+            android:id="@+id/checkbox_discount"
+            android:layout_width="@dimen/_25sdp"
+            android:layout_height="@dimen/_25sdp"
+            android:textColor="@color/white"
+            android:checked="false"
+            android:background="@drawable/checkbox_selector"
+            android:button="@null"
+            />
+        <TextView
+            android:id="@+id/tvCancelContent"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:textSize="@dimen/_12sdp"
+            android:fontFamily="@font/montserrat_medium"
+            android:layout_marginLeft="@dimen/_10sdp"
+            android:textColor="@color/black"
+            />
+
+    </LinearLayout>
+    <View
+        android:layout_width="match_parent"
+        android:layout_height="@dimen/_1sdp"
+        android:background="@color/gray"
+        />
+</LinearLayout>

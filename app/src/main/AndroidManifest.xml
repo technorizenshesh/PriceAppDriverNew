@@ -1,0 +1,85 @@
+<?xml version="1.0" encoding="utf-8"?>
+<manifest xmlns:android="http://schemas.android.com/apk/res/android"
+    package="com.android.priceappdriver">
+    <uses-permission android:name="android.permission.ACCESS_WIFI_STATE" />
+    <uses-permission android:name="android.permission.ACCESS_NETWORK_STATE" />
+    <uses-permission android:name="android.permission.ACCESS_FINE_LOCATION" />
+    <uses-permission android:name="android.permission.READ_EXTERNAL_STORAGE" />
+    <uses-permission android:name="android.permission.WRITE_EXTERNAL_STORAGE" />
+    <uses-permission android:name="android.permission.CAMERA" />
+    <uses-permission android:name="android.permission.INTERNET" />
+    <uses-permission android:name="android.permission.ACCESS_COARSE_LOCATION" />
+    <uses-permission android:name="com.google.android.providers.gsf.permission.    READ_GSERVICES" />
+    <uses-feature
+        android:name="android.hardware.camera"
+        android:required="true" />
+
+    <application
+        android:allowBackup="true"
+        android:hardwareAccelerated="false"
+        android:icon="@drawable/ic_app_logo"
+        android:label="@string/app_name"
+        android:largeHeap="true"
+        android:roundIcon="@mipmap/ic_launcher_round"
+        android:supportsRtl="true"
+        android:theme="@style/Theme.PriceAppDriver"
+        android:networkSecurityConfig="@xml/network_security_config"
+        android:usesCleartextTraffic="true">
+        <activity android:name="com.android.priceappdriver.OrderCompletedAct"
+            android:hardwareAccelerated="true"
+            ></activity>
+        <activity android:name="com.android.priceappdriver.TripPendingAct" />
+        <activity android:name="com.android.priceappdriver.EditVehicleAct" />
+        <activity android:name="com.android.priceappdriver.AddDocumentAct" />
+        <activity
+            android:name="com.android.priceappdriver.AddVehicleAct"
+            android:hardwareAccelerated="true" />
+        <activity
+            android:name="com.android.priceappdriver.EditBankDetail"
+            android:hardwareAccelerated="true" />
+        <activity
+            android:name="com.android.priceappdriver.AddCardDetailAct"
+            android:hardwareAccelerated="true" />
+        <activity
+            android:name="com.android.priceappdriver.ContactUs"
+            android:hardwareAccelerated="true" />
+        <activity android:name="com.android.priceappdriver.AboutUs" />
+        <activity android:name="com.android.priceappdriver.ChangePassAct" />
+        <activity android:name="com.android.priceappdriver.TermsAndConditionAct" />
+        <activity android:name="com.android.priceappdriver.PrivacyPolicyAct" />
+        <activity android:name="com.android.priceappdriver.TripDetail" />
+        <activity
+            android:name="com.android.priceappdriver.ProfileAct"
+            android:hardwareAccelerated="true" />
+        <activity android:name="com.android.priceappdriver.SettingAct" />
+        <activity android:name="com.android.priceappdriver.HomeAct" />
+        <activity android:name="com.android.priceappdriver.ForgotPasswordAct" />
+        <activity android:name="com.android.priceappdriver.OtpAct" />
+        <activity
+            android:name="com.android.priceappdriver.SignupAct"
+            android:hardwareAccelerated="true" />
+        <activity android:name="com.android.priceappdriver.LoginOptionAct" />
+        <activity android:name="com.android.priceappdriver.LoginAct" />
+        <activity android:name="com.android.priceappdriver.SplashAct">
+            <intent-filter>
+                <action android:name="android.intent.action.MAIN" />
+                <category android:name="android.intent.category.LAUNCHER" />
+            </intent-filter>
+        </activity>
+        <meta-data
+            android:name="com.google.android.maps.v2.API_KEY"
+            android:value="@string/api_key" />
+        <meta-data
+            android:name="com.google.android.gms.version"
+            android:value="@integer/google_play_services_version" />
+        <provider
+            android:name="androidx.core.content.FileProvider"
+            android:authorities="com.android.stanrz.provider"
+            android:exported="false"
+            android:grantUriPermissions="true">
+            <meta-data
+                android:name="android.support.FILE_PROVIDER_PATHS"
+                android:resource="@xml/file_path" />
+        </provider>
+    </application>
+</manifest>
